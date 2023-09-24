@@ -62,11 +62,12 @@ class _CounterScreenState extends State<CounterScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("Counter App",
+        title: Text(
+          "Counter App",
           style: TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
       ),
       body: Center(
@@ -77,44 +78,49 @@ class _CounterScreenState extends State<CounterScreen> {
               "Count:",
               style: TextStyle(fontSize: 24),
             ),
-
             Text(
               "$count",
-              style: TextStyle(fontSize: 45,fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-
-
                 ElevatedButton(
                   onPressed: _incrementCounter,
-                  child: Text("+",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                  child: Text(
+                    "+",
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     minimumSize: Size(50, 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
                     ),
-
                   ),
                 ),
                 SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: _decrementCounter,
-                  child: Text("-",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.white),),
+                  child: Text(
+                    "-",
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     minimumSize: Size(60, 15),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
                     ),
-
-
                   ),
                 ),
-
               ],
             ),
           ],
